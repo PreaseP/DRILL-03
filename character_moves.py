@@ -60,12 +60,15 @@ def draw_boy(x: float, y: float):
 
 def move_from_left_to_right():
     print("Moving left -> right")
-    for x in range(200, 401):
+    for x in range(200, 601):
         draw_boy(x, 200)
     pass
 
 
 def move_from_right_to_top():
+    print("Moving right -> top")
+    for x, y in zip(range(600, 399, -1), range(200, 401)):
+            draw_boy(x, y)
     pass
 
 
