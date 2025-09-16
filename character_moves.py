@@ -73,6 +73,9 @@ def move_from_right_to_top():
 
 
 def move_from_top_to_left():
+    print("Moving top -> left")
+    for x, y in zip(range(400, 201, -1), range(400, 199, -1)):
+            draw_boy(x, y)
     pass
 
 
@@ -85,10 +88,10 @@ def move_triangle():
 
 
 while True :
-    # move_circle()
+    move_rectangle()
     move_triangle()
-    # move_rectangle()
-    break
+    move_circle()
+    # break
     pass
 
 
