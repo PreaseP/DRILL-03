@@ -35,9 +35,9 @@ def move_left():
 
 def move_rectangle():
     print("Moving rectangle")
-    # move_top()
-    # move_right()
-    # move_bottom()
+    move_top()
+    move_right()
+    move_bottom()
     move_left()
     pass
 
@@ -58,8 +58,26 @@ def draw_boy(x: float, y: float):
     delay(0.01)
 
 
+def move_from_left_to_right():
+    print("Moving left -> right")
+    for x in range(200, 401):
+        draw_boy(x, 200)
+    pass
+
+
+def move_from_right_to_top():
+    pass
+
+
+def move_from_top_to_left():
+    pass
+
+
 def move_triangle():
     print("Moving triangle")
+    move_from_left_to_right()
+    move_from_right_to_top()
+    move_from_top_to_left()
     pass
 
 
